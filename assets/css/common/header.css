@@ -12,6 +12,10 @@
     display: block;
 }
 
+.nav a * {
+    height: 24px;
+}
+
 .logo,
 #menu {
     display: flex;

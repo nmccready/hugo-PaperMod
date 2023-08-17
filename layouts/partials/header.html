@@ -68,6 +68,8 @@
                 {{- end -}}
                 {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
                     {{ site.Params.label.iconSVG | safeHTML }}
+                {{- else if and site.Params.label.iconData.name site.Params.label.iconData.type }}
+                    {{ index .Site.Data site.Params.label.iconData.type site.Params.label.iconData.name | safeHTML }}
                 {{- end -}}
                 {{- $label_text -}}
             </a>
