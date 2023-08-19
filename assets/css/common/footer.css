@@ -26,6 +26,10 @@
     border-bottom: 1px solid var(--secondary);
 }
 
+.footer span.disclose {
+    font-style: italic;
+}
+
 .footer a:hover {
     border-bottom: 1px solid var(--primary);
 }
